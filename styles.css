@@ -1,0 +1,101 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+
+  --grayish-Blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-blue);
+    font-family: 'Manrope', sans-serif;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    width: 90%;
+    min-width: 320px;
+    max-width: 375px;
+    height: 300px;
+    border-radius: 10px;
+    padding:30px 20px 0 20px;  
+    background-color: var(--dark-grayish-blue);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#quote-index {
+    color: var(--neon-green);
+    font-size: 0.6rem;
+    letter-spacing: 5px;
+}
+
+#quote {
+    color: var(--light-cyan);
+    font-size: 24px;
+    margin: 20px 0 20px 0;
+}
+
+/* * This styles makes the divider for the desktop invisible.*/
+.divider-desktop {
+    display: none;
+}
+
+#quote-btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 100%;
+    background-color: var(--neon-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -30px;
+}
+
+.attribution {
+    margin-top: 50px;
+    font-size: 11px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 500px) {
+    
+    #container {
+        min-width: 475px;
+        padding: 30px 40px 0 40px;
+    }
+
+    .divider-mobile {
+        display: none;
+    }
+
+    .divider-desktop {
+        display: block;
+        max-width: 395px;
+    }
+    
+    #quote-btn {
+        bottom: -35px;
+    }
+}
