@@ -1,10 +1,10 @@
 :root {
-  --light-cyan: hsl(193, 38%, 86%);
-  --neon-green: hsl(150, 100%, 66%);
+  --light-cyan: rgba(206, 227, 233);
+  --neon-green: rgba(82, 255, 168);
 
-  --grayish-Blue: hsl(217, 19%, 38%);
-  --dark-grayish-blue: hsl(217, 19%, 24%);
-  --dark-blue: hsl(218, 23%, 16%);
+  --grayish-Blue: rgba(78, 93, 115);
+  --dark-grayish-blue: rgb(50, 58, 73);
+  --dark-blue: rgba(31, 38, 50);
 }
 
 * {
@@ -60,14 +60,27 @@ body {
 #quote-btn {
     width: 60px;
     height: 60px;
-    border: none;
     border-radius: 100%;
+    position: relative;
+    bottom: -30px;       
     background-color: var(--neon-green);
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom: -30px;
+    border: none;     
+    cursor: pointer;       
+}
+
+#quote-btn:hover,
+#quote-btn:focus {    
+    box-shadow: 0 5px 15px var(--neon-green);
+    transition: all ease-in-out .5s;
+}
+
+#quote-btn:not(:hover),
+#quote-btn:not(:focus),
+#quote-btn:not(:active) {
+    transition: box-shadow ease-out 1s;
 }
 
 .attribution {
@@ -90,6 +103,7 @@ body {
 
 .link:hover,
 .link:focus {
+    outline: thin dotted;
     color: var(--dark-blue);
     box-shadow: inset 200px 0 0 0 var(--neon-green);
 }
