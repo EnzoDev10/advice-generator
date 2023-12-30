@@ -3,7 +3,7 @@
   --neon-green: rgba(82, 255, 168);
 
   --grayish-Blue: rgba(78, 93, 115);
-  --dark-grayish-blue: rgb(50, 58, 73);
+  --dark-grayish-blue: rgba(50, 58, 73);
   --dark-blue: rgba(31, 38, 50);
 }
 
@@ -15,116 +15,117 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--dark-blue);
-    font-family: 'Manrope', sans-serif;    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark-blue);
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #container {
-    width: 90%;
-    min-width: 320px;
-    max-width: 375px;
-    height: 300px;
-    border-radius: 10px;
-    padding:30px 20px 0 20px;  
-    background-color: var(--dark-grayish-blue);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  width: 90%;
+  min-width: 320px;
+  max-width: 375px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 30px 20px 0 20px;
+  background-color: var(--dark-grayish-blue);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #quote-index {
-    color: var(--neon-green);
-    font-size: 0.6rem;
-    letter-spacing: 5px;
+  color: var(--neon-green);
+  font-size: 0.6rem;
+  letter-spacing: 5px;
 }
 
 #quote {
-    color: var(--light-cyan);
-    font-size: 24px;
-    margin: 20px 0 20px 0;
+  color: var(--light-cyan);
+  font-size: 24px;
+  margin: 20px 0 20px 0;
 }
 
 /* * This styles makes the divider for the desktop invisible.*/
 .divider-desktop {
-    display: none;
+  display: none;
 }
 
 #quote-btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    position: relative;
-    bottom: -30px;       
-    background-color: var(--neon-green);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;     
-    cursor: pointer;       
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: relative;
+  bottom: -30px;
+  background-color: var(--neon-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
 }
 
-#quote-btn:hover,
-#quote-btn:focus {    
-    box-shadow: 0 5px 15px var(--neon-green);
-    transition: all ease-in-out .5s;
+#quote-btn:hover {
+  box-shadow: 0 0 40px var(--neon-green);
+  transition: all ease-in 1s;  
 }
 
-#quote-btn:not(:hover),
-#quote-btn:not(:focus),
-#quote-btn:not(:active) {
-    transition: box-shadow ease-out 1s;
+#quote-btn:not(:hover) {
+  transition: box-shadow ease-out 1.5s;
+}
+
+.btn-animation {
+  transform: rotate(180deg) scale(1.1);
+  transition: transform .5s;
 }
 
 .attribution {
-    position: relative;
-    top: 100px;
-    font-size: 11px;
-    color: var(--light-cyan);
-    letter-spacing: 2px;
+  position: relative;
+  top: 100px;
+  font-size: 11px;
+  color: var(--light-cyan);
+  letter-spacing: 2px;
 }
 
 .link {
-    color:var(--light-cyan);
-    text-decoration: none;
-    box-shadow: inset 0 0 0 0 var(--neon-green);
-    color: var(--neon-green);
-    padding: 0 .25rem;
-    margin: 0 -.25rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  color: var(--light-cyan);
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 var(--neon-green);
+  color: var(--neon-green);
+  padding: 0 0.25rem;
+  margin: 0 -0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .link:hover,
 .link:focus {
-    outline: thin dotted;
-    color: var(--dark-blue);
-    box-shadow: inset 200px 0 0 0 var(--neon-green);
+  outline: thin dotted;
+  color: var(--dark-blue);
+  box-shadow: inset 200px 0 0 0 var(--neon-green);
 }
 
 @media screen and (min-width: 500px) {
-    
-    #container {
-        min-width: 475px;
-        padding: 30px 40px 0 40px;
-    }
+  #container {
+    min-width: 475px;
+    padding: 30px 40px 0 40px;
+  }
 
-    .divider-mobile {
-        display: none;
-    }
+  .divider-mobile {
+    display: none;
+  }
 
-    .divider-desktop {
-        display: block;
-        max-width: 395px;
-    }
-    
-    #quote-btn {
-        bottom: -35px;
-    }
+  .divider-desktop {
+    display: block;
+    max-width: 395px;
+  }
+
+  #quote-btn {
+    bottom: -35px;
+  }
 }
