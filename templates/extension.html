@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<p id="quote-index">ADVICE #{{data["id"]}}</p>
+
+<p id="quote">
+    <span>{{data["advice"]}}</span>
+  </p>
+{% endblock content %}

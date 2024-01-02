@@ -31,7 +31,7 @@ body {
   max-width: 375px;
   height: 300px;
   border-radius: 10px;
-  padding: 30px 20px 0 20px;
+  padding: 30px 30px 0 30px;
   background-color: var(--dark-grayish-blue);
   text-align: center;
   display: flex;
@@ -50,6 +50,10 @@ body {
   color: var(--light-cyan);
   font-size: 24px;
   margin: 20px 0 20px 0;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* * This styles makes the divider for the desktop invisible.*/
@@ -69,6 +73,7 @@ body {
   justify-content: center;
   border: none;
   cursor: pointer;
+  transition: 0.2 all;
 }
 
 #quote-btn:hover {
@@ -81,8 +86,7 @@ body {
 }
 
 .btn-animation {
-  transform: scale(1.1);
-  transition: transform 0.1s;
+  transform: scale(0.90);
 }
 
 .attribution {
@@ -113,7 +117,6 @@ body {
 @media screen and (min-width: 500px) {
   #container {
     min-width: 475px;
-    padding: 30px 40px 0 40px;
   }
 
   .divider-mobile {
@@ -125,7 +128,4 @@ body {
     max-width: 395px;
   }
 
-  #quote-btn {
-    bottom: -35px;
-  }
 }
