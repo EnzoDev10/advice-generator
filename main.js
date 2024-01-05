@@ -11,3 +11,10 @@ document.querySelector("#quote-btn").addEventListener("click", () => {
     btn.classList.add("btn-animation");
   }, 1000);
 });
+
+btn.onclick = function () {
+  fetch('/get_advice', {
+      method: 'GET',
+      
+  })
+};
