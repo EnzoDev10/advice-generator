@@ -9,9 +9,9 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="static/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,22 +23,25 @@
   </head>
   <body>
     <section id="container">
-      {% block content%}
+      <h4 id="quote-index">Advice #</h4>
 
-      {% endblock content%}
+      <p id="quote">
+        ""
+      </p>
+
       <img
-        src="static/images/pattern-divider-mobile.svg"
+        src="images/pattern-divider-mobile.svg"
         alt="divider image"
         class="divider divider-mobile"
       />
       <img
-        src="static/images/pattern-divider-desktop.svg"
+        src="images/pattern-divider-desktop.svg"
         alt="divider image"
         class="divider divider-desktop"
       />
 
       <button id="quote-btn" type="button">
-        <img src="static/images/icon-dice.svg" alt="dice image" id="dice" />
+        <img src="images/icon-dice.svg" alt="dice image" id="dice" />
       </button>
     </section>
     <div class="attribution">
@@ -54,5 +57,5 @@
       >.
     </div>
   </body>
-  <script src="static/main.js"></script>
+  <script src="main.js"></script>
 </html>
