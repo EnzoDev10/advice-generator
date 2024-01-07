@@ -86,7 +86,9 @@ body {
 }
 
 .btn-animation {
-  transform: scale(0.90);
+  transition: transform .5s linear;
+  transform: rotateZ(180deg);
+
 }
 
 .attribution {
@@ -127,5 +129,4 @@ body {
     display: block;
     max-width: 395px;
   }
-
 }

@@ -1,5 +1,3 @@
-const btn = document.getElementById("quote-btn");
-
 window.onload = getRandomAdvice();
 
 async function getRandomAdvice() {
@@ -16,6 +14,7 @@ async function getRandomAdvice() {
     let advice = slip.advice;
 
   } else {
+    // if the API doesn't work, sends an alert.
     alert("something went wrong.");
   }
 }
@@ -24,12 +23,12 @@ async function getRandomAdvice() {
 // It's removed and added to ensure that the animation
 // runs every time that the button is clicked.
 
-/* btn.addEventListener("click", () => {
-  btn.classList.remove("btn-animation");
+const btn = document.getElementById("quote-btn");
+const dice = document.getElementById("dice");
+ btn.addEventListener("click", () => {
+  dice.classList.remove("btn-animation");
 
   setTimeout(function () {
-    btn.classList.add("btn-animation");
+    dice.classList.add("btn-animation");
   }, 1000);
 });
-
- */
