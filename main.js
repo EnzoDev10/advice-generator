@@ -1,7 +1,7 @@
 async function getRandomAdvice() {
   const apiUrl = "https://api.adviceslip.com/advice";
 
-  let response = await fetch(apiUrl);
+  let response = await fetch(apiUrl, {cache: 'no-cache'});
   if (response.ok) {
     let json = await response.json();
     // Gets the content out of the API to a json file.
