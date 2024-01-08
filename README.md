@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/EnzoDev10/advice-generator/tree/main)
-- Live Site URL: [Add live site URL here](https://enzodev10.github.io/advice-generator/)
+- Solution URL: [link to the repository](https://github.com/EnzoDev10/advice-generator/tree/main)
+- Live Site URL: [link to see the live site](https://enzodev10.github.io/advice-generator/)
 
 ## My process
 
@@ -83,11 +83,11 @@ In future projects i would like to try out one a CSS preprocessor like stylus or
 
 ### Useful resources
 
-- [Example resource 1](https://youtu.be/zHUpx90NerM?si=PJNOAITKkac2V5sd) - This helped me to make the animations and transitions.
+- [animation tutorial by traversy media](https://youtu.be/zHUpx90NerM?si=PJNOAITKkac2V5sd) - This helped me to make the animations and transitions.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/EnzoDev10)
+- Frontend Mentor - [@EnzoDev10](https://www.frontendmentor.io/profile/EnzoDev10)
 
 
 ## Acknowledgments
