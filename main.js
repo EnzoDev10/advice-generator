@@ -11,7 +11,7 @@ async function getRandomAdvice() {
     let id = slip.id;
     let advice = slip.advice;
 
-    document.getElementById("quote-index").innerHTML ="advice #" + id;
+    document.getElementById("quote-index").innerHTML ="ADVICE #" + id;
     document.getElementById("quote").innerHTML = advice;
 
   } else {
