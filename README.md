@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](images\screenshot.png)
+![](C:\Users\Administrator\Desktop\coding\repos\advice-generator\images\screenshot.png)
 
 
 ### Links
