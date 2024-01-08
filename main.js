@@ -1,5 +1,3 @@
-window.onload = getRandomAdvice();
-
 async function getRandomAdvice() {
   const apiUrl = "https://api.adviceslip.com/advice";
 
@@ -40,9 +38,9 @@ const id = document.getElementById("quote-index");
   id.classList.remove("quote.animation");
 
   setTimeout(function () {
+    getRandomAdvice();
     dice.classList.add("btn-animation");
     id.classList.add("quote.animation");
     quote.classList.add("quote-animation");
-    getRandomAdvice();
   }, 1000);
 });
