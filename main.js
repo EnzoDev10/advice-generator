@@ -13,11 +13,16 @@ async function getRandomAdvice() {
     let id = slip.id;
     let advice = slip.advice;
 
+    document.getElementById("quote-index").innerHTML ="advice #" + id;
+    document.getElementById("quote").innerHTML = advice;
+
   } else {
     // if the API doesn't work, sends an alert.
     alert("something went wrong.");
   }
 }
+
+
 
 // Runs an animation for the button when is clicked.
 // It's removed and added to ensure that the animation
@@ -25,10 +30,19 @@ async function getRandomAdvice() {
 
 const btn = document.getElementById("quote-btn");
 const dice = document.getElementById("dice");
+
+const quote = document.getElementById("quote");
+const id = document.getElementById("quote-index");
+
  btn.addEventListener("click", () => {
   dice.classList.remove("btn-animation");
+  quote.classList.remove("quote-animation");
+  id.classList.remove("quote.animation");
 
   setTimeout(function () {
     dice.classList.add("btn-animation");
+    id.classList.add("quote.animation");
+    quote.classList.add("quote-animation");
+    getRandomAdvice();
   }, 1000);
 });
